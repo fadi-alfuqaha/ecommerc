@@ -1,0 +1,176 @@
+.navbar{
+  display: flex;
+  background-color: #f3efeb;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  top: 0;
+
+}
+
+.navbar .left_side {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.navbar .right_side{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+   
+}
+
+.navbar .left_side .title{
+    border: 2px solid black;
+    width: 80px;
+    padding-left: 50px;
+    border-radius: 5px;
+}
+
+.homeScreen img{
+    width: 100%;
+    height: auto;
+    margin-top: 72px;
+    
+
+}
+
+.homeScreen .content{
+    color: white;
+    position: absolute;  
+    margin-left: 39%;
+    margin-top: -27%;
+    margin-bottom: 14%; 
+}
+.homeScreen .content h1{
+    font-size: 50px;
+}
+.homeScreen .content button{
+    width: 150px;
+    height: 50px;
+    background-color: white;
+}
+
+.homeScreen .content .first_button{
+    margin-left: 70px;
+}
+
+.features{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #f3efeb;
+    padding: 40px;
+}
+
+.category{
+    display: flex;
+    justify-content: center;
+
+}
+
+.category img{
+    width: 512px;
+}
+
+.category h3{
+    position: relative;
+    bottom: 290px;
+    left: 240px;
+    color: white;
+    font-weight: bold;
+    font-size: -webkit-xxx-large;
+
+}
+
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+
+.uniform{
+    display: flex;
+    justify-content: center;
+}
+
+.uniform img{
+    width: 512px;
+}
+
+.uniform h3{
+    position: relative;
+    bottom: 290px;
+    left: 240px;
+    color: white;
+    font-weight: bold;
+    font-size: -webkit-xxx-large;
+
+}
+
+.essay{
+    display: flex;
+    justify-content: stretch;
+    background-color: #f3efeb;
+    justify-content: center;
+}
+
+.essay img{
+    max-width:500px;
+    height:auto;
+}
+
+.essay .content{
+    padding-top: 105px;
+    width: 170px;
+}
+.essay .content h6{
+    color: #7e7469;
+}
+.essay .content span{
+    font-weight: bold;
+}
+.essay .content button{
+    width: 180px;
+    height: 44px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.contactUs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 350px;
+}
+
+.contactUs .left-box{
+   background-color:  #2c241d;
+   padding-left: 150px;
+   padding-top: 40px;
+}
+.contactUs .left-box div{
+    margin-top: 15px;
+}
+
+.contactUs .right-box{
+    background-color: #594e45;
+    padding-left: 80px;
+    padding-top: 40px;
+}
+
+.contactUs .right-box input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.contactUs .right-box input[type=email]{
+    width: 50%;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+
+
