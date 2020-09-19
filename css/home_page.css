@@ -82,12 +82,20 @@
 
 .products{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr ; 
 }
 
 .products img{
     max-width: 300px;
     max-height: 350px;
+}
+
+.products button{
+    margin: 10px;
+    width: 120px;
+    background-color: black;
+    color: white;
+
 }
 
 .uniform{
@@ -171,4 +179,56 @@
 }
 
 
+.cart{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: gray;
+    text-align: center;
 
+}
+.cart i {
+    padding-top: 10px;
+}
+
+.listOfCart {
+    display: flex;
+}
+.listOfCart .items .item{
+ width: 600px; 
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+ margin-top: 30px;
+ border: 2px solid black;
+
+}
+
+.listOfCart  img{
+    max-width: 200px;
+    max-height: 200px;
+}
+.finalprocess{
+    text-align: center;
+}
+
+.finalprocess{
+    overflow: hidden;
+    position: fixed;
+    left: 700px;
+    top: 215px;
+}
+
+.listOfCart{
+    margin-top: 60px;
+}
+
+.finalprocess button{
+    width: 200px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
