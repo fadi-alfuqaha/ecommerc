@@ -256,12 +256,22 @@ uniform.forEach(element => {
 });
 
 
+    
 const clickAddToAction = function () {
     selectedItem = products[this.id];
     cart.push(selectedItem); 
     localStorage.setItem("newCartItems", JSON.stringify(cart));
+    numberOfItems = numberOfItems + 1;
+    localStorage.setItem("numberOfItem", numberOfItems);
+    document.querySelector(".cart a").innerHTML = localStorage.getItem("numberOfItem");
+
+
     
 }
+
+
+document.querySelector(".cart a").innerHTML = localStorage.getItem("numberOfItem");
+
 addToCartButtons = document.querySelectorAll(".products button");
 addToCartButtons.forEach(element => {
     element.addEventListener("click", clickAddToAction);

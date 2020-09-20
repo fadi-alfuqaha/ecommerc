@@ -107,13 +107,15 @@ const total = function () {
 
 NumberOfCarts();
 total();
+if (document.URL.includes("cart.html")) {
+    JSON.parse(localStorage.getItem("newCartItems")).forEach(element => {
+        prepareCartDev(element);
+    });
+    
+    deleteLocalStorge = document.querySelector(".delete");
+    deleteLocalStorge.addEventListener("click", function () {
+        localStorage.clear();
+        location.reload();
+    })
+}
 
-JSON.parse(localStorage.getItem("newCartItems")).forEach(element => {
-    prepareCartDev(element);
-});
-
-deleteLocalStorge = document.querySelector(".delete");
-deleteLocalStorge.addEventListener("click", function () {
-    localStorage.clear();
-    location.reload();
-})
