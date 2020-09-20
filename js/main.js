@@ -256,14 +256,15 @@ uniform.forEach(element => {
 });
 
 
-const clickAddToAction = function (id) {
-    selectedItem = products[id];
-    cart.push(selectedItem);
+const clickAddToAction = function () {
+    selectedItem = products[this.id];
+    cart.push(selectedItem); 
+    localStorage.setItem("newCartItems", JSON.stringify(cart));
     
 }
 addToCartButtons = document.querySelectorAll(".products button");
 addToCartButtons.forEach(element => {
-    element.addEventListener("click", clickAddToAction(this.id))
+    element.addEventListener("click", clickAddToAction);
 });
 
 
